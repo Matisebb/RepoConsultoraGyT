@@ -4,162 +4,198 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Consultora Gestion&Tendencias</title>
+
+
+	 <!-- ANIMATE CSS -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+
+    <!-- BOOSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
 	<link rel="stylesheet" href="../css/inicio.css">
 	<link rel="shortcut icon" href="../img/favicongyt.png">
 </head>
+
 <body>
-	<div class="contenedorGrids">
-	<!-- inicio header -->
-	<header class="navFlex navGrids navModel   linear-gradient">
-		<!-- inicio nav -->
-		
-			<a href="../index.html">
-				<img src="../img/logonavgytwithbck.png" alt="Logo index de consultora gestion y tendencias" class="imgLogo">
-			</a>			
-		
-		<nav class="textBold">	
-			<ul>
-				<li>
-					<a href="../index.html">Inicio</a>
-				</li>
-				<li>
-					<a href="Servicios.html">Servicios</a>
-				</li>
-				<li><a href="Contacto1.html">Contacto</a>	
-				</li>
-				<li>
-					<a href="Faq1.html">FAQ</a>
-				</li>
-				<li>
-					<a href="Noticias.html">Noticias</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- fin nav-->
-	</header>
-	<!-- fin header -->
+	<!-- INICIA NAV + LOGO -->
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-linear-gradient navBs textBold">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../indexx.html">
+          <img src="../img/logonavgytwithbck.png" alt="Logo consultora gestion y tendencias consultora marketing asistencia financiera y estudio de mercado">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+              <a class="nav-link  " aria-current="page" href="../indexx.html">Inicio</a>
+            </li>           
+            <li class="nav-item">
+              <a class="nav-link  " aria-current="page" href="Servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="Contacto1.html">Contacto</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="Faq1.html">FAQ</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="Noticias.html">Noticias</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- FIN NAV + LOGO -->
+	
+
+
 	<!-- inicio de main -->
-	<main class="mainGrids mainModel">
-		<!-- inicio de seccion -->
-
-		<section class="">
-
-			<div class="txt">
-			<!-- inicio de titulo principal -->
-				<h1 class="textBold textLeft">
+	<main>
+		<section class="px-5 py-5">
+			<div class=" container-fluid">
+				<h1 class="textBold textLeft  wow animate__fadeInUp ">
 					Servicios
 				</h1>
-			<!-- fin titulo principal -->
-			<!-- inicio de titulo secundario -->
-				<h2 class="textBold textLeft">
+				<h2 class="textBold textLeft  wow animate__fadeInUp ">
 					¿Qué servicios brindamos?
 				</h2>
-			<!-- fin de titulo secundario -->
+				<div class="row">
+					<article class="col-sm-12 col-md-6 col-lg-4 bg-div">
+						<h3 class="textBold text-center	py-5 wow animate__fadeInUp">
+							Marketing
+						</h3>	
+							<p class="textRegular textLeft wow animate__bounceInUp">
+								Orientamos a las empresas y organizaciones para entender las necesidades y los deseos de sus clientes actuales y potenciales. Para ello ofrecemos servicios a medida, con acciones efectivas y adaptables a cada presupuesto.
+							</p>
+							<img src="../img/marketing.png" alt="Consultora gestion y tendencias servicio de marketing" class="img-fluid w-100 d-block wow animate__bounceInUp align">
+					</article>
+					<article class="col-sm-12 col-md-6 col-lg-4 bg-div	">
+						<h3 class="textBold text-center py-5 wow animate__fadeInUp">
+							Estudio de Mercado
+						</h3>	
+							<p class="textRegular textLeft wow animate__bounceInUp">
+								Cubrimos un amplio espectro en la investigacion de mercado, desde la identificacion de la necesidad planteada, pasando por la preparación de los estudios para abordarla, el relevamiento de la información, su posterior análisis e interpretación, hasta el acompañamiento en la implementación de los resultados.
+								<img src="../img/mercado.png" alt="Consultora gestion y tendencias servicio de Estudio de mercado" class="img-fluid w-100 d-block wow animate__bounceInUp align">
+							</p>
+					</article>	
+					<article class="col-sm-12 col-md-6 col-lg-4 bg-div">
+						<h3 class="textBold text-center py-5 wow animate__fadeInUp	">
+							Asistencia Financiera
+						</h3>	
+						<p class="textRegular textLeft wow animate__bounceInUp">
+							Nuestra vasta experiencia nos permite brindarle asistencia y asesoramiento en:
+						<ul class="textList textLeft wow animate__bounceInUp">
+							<li><img src="../img/tick.png" alt="">Orientación financiera y estratégica. </li>
+							<li><img src="../img/tick.png" alt="">Análisis y factiblidad de proyectos de inversión.</li>
+							<li><img src="../img/tick.png" alt="">Elaboración de planes o proyectos de inversión.</li>
+							<li><img src="../img/tick.png" alt="">Búsqueda de financiamiento y diseño para su adquisición.</li>
+						</ul>
+						</p>
+						<img src="../img/financiera.png" alt="Consultora gestion y tendencias servicio de Asistencia financiera para empresas, pymes star up" class="img-fluid w-100 d-block wow animate__bounceInUp align">
+					</article>		
+				</div>	
 			</div>
-
-			<!-- inicio de contenido de parrafo  -->
-
-			<div class="mkt">
-				<h3 class="textBold textLeft">
-					Marketing
-					<p class="textRegular textLeft">
-						Orientamos a las empresas y organizaciones para entender las necesidades y los deseos de sus clientes actuales y potenciales. Para ello ofrecemos servicios a medida, con acciones efectivas y adaptables a cada presupuesto.
-					</p>
-				</h3>
-			</div>
-				<div class="imgkmt">
-					<img src="../img/marketing.png" alt="Consultora gestion y tendencias servicio de marketing" class="imgCenter">
-				</div>
-					
-			<div class="merk">
-				<h3 class="textBold textRight">
-					Estudio de Mercado
-					<p class="textRegular textLeft">
-						Cubrimos un amplio espectro en la investigacion de mercado, desde la identificacion de la necesidad planteada, pasando por la preparación de los estudios para abordarla, el relevamiento de la información, su posterior análisis e interpretación, hasta el acompañamiento en la implementación de los resultados.
-					</p>
-				<div class="imgmerk">
-					<img src="../img/mercado.png" alt="Consultora gestion y tendencias servicio de Estudio de mercado" class="imgCenter">
-				</div>
-			</h3>
-		</div>	
-
-		<div class="asis">
-			<h3 class="textBold textLeft">
-				Asistencia Financiera
-				<p class="textRegular textLeft">
-					Nuestra vasta experiencia nos permite brindarle asistencia y asesoramiento en:
-				<ul class="textList textLeft">
-					<li>Orientación financiera y estratégica. </li>
-					<li>Análisis y factiblidad de proyectos de inversión.</li>
-					<li>Elaboración de planes o proyectos de inversión.</li>
-					<li>Búsqueda de financiamiento y diseño para su adquisición.</li>
-				</ul>
-				</p>
-			</h3>
-		</div>
-				<div class="imgasis">
-					<img src="../img/financiera.png" alt="Consultora gestion y tendencias servicio de Asistencia financiera para empresas, pymes star up" class="imgCenter">
-				</div>
-
+		</section>		
+	</main>	
+				
 		<div class="howw">
-			<h3 class="textBold textLeft mainModel">
+			<h3 class="textBold textLeft px-5 py-5	">
 				¿Cómo trabajamos?
 			</h3>
-				<p class="textRegular">
+				<p class="textRegular p px-5	">
 					Nuestra herramienta estratégica de consultoria se basa en un Plan de negocios, esto es, el trabajo conjunto con el cliente para plasmar en un documento integral desde las proyecciones económico-financieras del proyecto en cuestión, hasta la descripción de aquellas estrategias que permitirán la ejecución de dichas proyecciones.
 				</p>
-				<p>
+				<p class="p px-5">
 					Se trabaja en el armado de un modelo económico y financiero, se lo asiste en la evaluación de su razonabilid y de las premisas que subyacen en las estrategias de negocio para detectar aquellas oportunidades que permitincrementar el valor del proyecto, mejorar su gestión y resolver las necesidades financieras.
 				</p>
 		</div>
 			<!-- fin de contenido de parrafo -->
-			<div class="textBold textSize1 textCenter ">
-				<a href="Contacto1.html">Mas información</a>
-			</div>
+
+			    <div class="botonFlex ">
+
+              <button type="button" class="btn btnColor  button wow animate__pulse ">Mas información</button>
+
+
+              <!-- <p class="text-center">Haga click <a href="views/Contacto1.html" class="textBold aquiBoton">aquí</a> para mas información
+              </p>-->
+
+            </div>
 
 		</section>
 		<!-- fin de secciones -->
 
-	</main>
+	
 	<!-- fin de main -->
-	<!-- inicio de footer -->
-	<footer class="pieFlex footerModel footerGrids">
-		<div>
-			<h4 class="textBold">
-				<p>Copyrights © - Todos los derechos reservados</p><p>Gestion y Tendencias 2022</p>
-			</h4>
-		</div>		
-		
-		<div>
-			<p class="textRegular">
-				<a href="https://www.instagram.com/nikesportswear/" target="_BLANK">
-					<img src="../img/instagram.ico" alt="red social de instagram de consultora gestion y tendencias"></a>
-				<a href="https://www.facebook.com/ATPTour/" target="_BLANK">
-					<img src="../img/fb.ico" alt="red social de facebook de consultora gestion y tendencias"></a>
-			</p>
+
+<!-- INICIO FOOTER -->
 
 
-				<a href="../index.html">Inicio</a>
-		</div>	
-		<div>
-			<p class="textLight">
-				<span class="textBold">Mas información</span>
-			</p>
-			<p class="textLight">
-				<span class="textBold">Email:</span> Lorem@inpum.dolor
-			</p>
-			<p class="textLight">
-				<span class="textBold">Horario:</span> Lunes a Viernes 8am - 12am / 16pm - 20pm
-			</p>
-			<p class="textLight">	
-				<span class="textBold">Direccion:</span> 3 de Febrero 1977 (3300) Posadas, Misiones
-			</p>
-			<p class="textLight">	
-				<span class="textBold">Telefono:</span> 3786-547858
-			</p>
-		</div>		
-	</footer>
-	<!-- fin de footer -->
+
+  <footer class="pieFlex footerModel footerGrid">
+    <div>
+      <h4 class="textBold">
+        <p>Copyrights © - Todos los derechos reservados</p><p>Gestion y Tendencias 2022</p>
+      </h4>
+    </div>    
+    
+    <div>
+      <p class="textRegular">
+        <a href="https://www.instagram.com/nikesportswear/" target="_BLANK">
+          <img src="../img/instagram.ico" alt="red social de instagram de consultora gestion y tendencias" class="scaleFoot"></a>
+        <a href="https://www.facebook.com/ATPTour/" target="_BLANK">
+          <img src="../img/fb.ico" alt="red social de facebook de consultora gestion y tendencias" class="scaleFoot"></a>
+      </p>
+
+
+        <a href="../indexx.html">Inicio</a>
+    </div>  
+    <div> 
+      <p class="textLight">
+        <span class="textBold">Mas información</span>
+      </p>
+      <p class="textLight">
+        <img src="../img/envelope-solid.svg">
+        <span class="textBold">Email:</span> Lorem@inpum.dolor
+      </p>
+      <p class="textLight">
+        <img src="../img/clock-solid.svg" alt="">
+        <span class="textBold">Horario:</span> Lunes a Viernes 8am - 12am / 16pm - 20pm
+      </p>
+      <p class="textLight"> 
+        <img src="../img/map-location-solid.svg" alt="">
+        <span class="textBold">Direccion:</span> 3 de Febrero 1977 (3300) Posadas, Misiones
+      </p>
+      <p class="textLight"> 
+        <img src="../img/phone-solid.svg" alt="">
+        <span class="textBold">Telefono:</span> 3786-547858
+      </p>
+    </div>    
+  </footer>
+
+
+  <!-- FIN FOOTER -->
 	</div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="../js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+
 </body>
 </html>
