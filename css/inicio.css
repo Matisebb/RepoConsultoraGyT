@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import 'animate.css';
 
 /* selectores de etiqueta */
 
@@ -8,25 +9,26 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-
 }
+
 
 html{
 	font-size: 62.5%;
+
 }
+
+
 
 body{
 	overflow-x: hidden;
+	background: rgba(245, 245, 245, 1.0);
 	
 }
 
-/* header */ 
-header{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+nav ul{
+	font-size: 2.5rem;
 }
+
 
 /* main */
 
@@ -40,24 +42,22 @@ h2{
 	color: rgb(2, 2, 2);
 }
 
-
-main p{
+article p{
 	font-size: 1.9rem;
 	line-height: 3.5rem;
 	color: rgb(2, 2, 2);
+	text-decoration: none;
 }
-
-p{
-	font-size: 2rem;
-	line-height: 2.5rem;
-}
-
 
 
 main a{
 	text-decoration: none;
 	color: rgb(2, 2, 2);
 }
+
+
+
+
 
 form {
 	text-decoration: none;
@@ -70,7 +70,7 @@ form {
 
 
 h3{
-	font-size: 2.3rem;
+	font-size: 2.5rem;
 	color: rgb(2, 2, 2);
 }
 
@@ -79,11 +79,20 @@ article h3{
 	font-size: 3rem;
 }
 
+
+section p{
+	font-size: 1.9rem;
+	line-height: 2.3rem;
+}
+
 h4{
 	font-size: 2.2rem;
 	color: rgb(2, 2, 2);
 }
 
+.button{
+	font-size: 1.9rem;
+}
 
 /* footer */
 
@@ -108,7 +117,66 @@ footer{
 
 
 
+
+
+
+
 /* selectores de clases */
+
+
+.p{
+	font-size: 1.9rem;
+	line-height: 2.5rem;
+}
+
+
+.moreInfo{
+	text-decoration: none;
+	list-style: none;
+}
+
+.moreInfocolor{
+	background: rgb#515151;
+}
+
+
+.botonFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.btnColor{
+	background-color: rgba(244, 74, 17, 0.9);
+}
+
+.btnanimation{
+	width: 10%;
+}
+
+.btnanimation:hover{
+	width: 13%;
+	transition: all 2s;
+}
+
+.btnanimation2{
+	width: 100%;
+}
+
+.btnanimation2:hover{
+	width: 105%;
+	transition: all 2s;
+}
+
+
+/* NAV BS */
+.navBs{
+	font-size: 1.2em;
+}
+
+.navBs img{
+	width: 75px;
+}
 
 /* SECTION INDEX GRID*/
 
@@ -143,7 +211,7 @@ footer{
 }
 
 .conGrid{
-	b
+	
 	grid-area: con;
 }
 
@@ -161,129 +229,9 @@ footer{
 
 
 /* nav FLEX */
-.navFlex{
-	background-color: rgba(246, 246, 246, 1);
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
-
-	.navFlex img{
-		width: 95px;
-	}
-	.navFlex ul{
-		display: flex;
-		list-style-type: none;
-	}
-
-		.navFlex ul li{
-			
-		}
-
-			.navFlex ul li a{
-				color: rgb(2, 2, 2);
-				text-decoration: none;
-				font-size: 2rem;
-				padding: 3rem;
-				/* subrayado animado*/
-				background-image: linear-gradient(currentColor, currentColor);
-   				background-position: 0% 100%;
-    			background-repeat: no-repeat;
-    			background-size: 0% 2px;
-    			transition: background-size .3s;
-
-			}
-
-			.navFlex ul li a:hover{
-			color: black;
-			font-weight: 600;
-			/*Subrayado animado*/
-			background-size: 100% 2px;
-			}
-/* comienza nav */
-/*.navFlex{
-	background-color: rgba(246, 246, 246, 1.0);
-	top: 0;
-	padding: 5px 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-}
-
-	.navFlex nav{
-		display: flex;
-	}
-
-	.navFlex img{
-		width: 95px;
-	}
-
-	.navFlex ul{
-		display: flex;
-		list-style: none;
-	}
-
-		.navFlex ul li{
-		
-			margin-right: 10px;
-		}
 
 
-			.navFlex ul li a{
-				color: rgb(2, 2, 2);
-				text-decoration: none;
-				font-size: 2.5rem;
-				padding: 2rem;
-			}*/
 
-/* slider img */
-.sliderImg{
-	background-color: rgba(2, 2, 2, 0.9);
-}
-
-/*.slider{           con boostrap
-	width: 95%;
-	margin: auto;
-	overflow: hidden;
-}
-
-.slider ul{
-	padding: 0;
-	display: flex;
-	width: 400%;
-
-	animation: cambio 20s infinite;
-	animation-direction: alternate;
-	animation-timing-function: ease-in;
-}
-
-.slider li{
-	list-style: none;
-	width: 100%;
-}
-
-.slider img{
-	width: 100%%;
-} 
-
-@keyframes cambio{
-	0% { margin-left: 0;}
-	20% { margin-left: 0;}
-
-	25% { margin-left: -100%;}
-	45% { margin-left: -100%;}
-
-	50% { margin-left: -200%;}
-	70% { margin-left: -200%;}
-
-	75% { margin-left: -300%;}
-	100% { margin-left: -300%;}
-}
-
-*/
 
 /* font weight y align txt */
 
@@ -354,16 +302,13 @@ footer{
 .imgFlex{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;;
+
 }
 
 .imgCenter{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border-radius: 1rem;
+	display: block;
+	margin: 0px auto;
+	width: 100%;
 }
 
 
@@ -449,8 +394,99 @@ footer{
 
 /* formulario */
 
+
+
+.sectionFormflex{
+	background: #181818;
+	color: white;
+	box-sizing: border-box;
+	padding:  1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1170px;
+}
+
+.colorForm{
+	color: white;
+}
+
+.logo{
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+
+}
+
+.logo span{
+	color: rgb(244, 74, 17);
+}
+
+
+.contact-wrapper{
+	box-shadow: 0 0 20px  0 rgba(255, 255, 255, 0.3);
+}
+
+.contact-wrapper > *{
+	padding: 1rem;
+}
+
+.contactForm{
+	background: #222222;
+	border: none;
+
+}
+
+.contactForm form{
+	margin: 0;
+	padding: 1rem;
+}
+
+.contactForm form label, .contactForm form input {
+	width: 100%;
+	padding: .7rem;
+	border: none;
+}
+
+.contactForm form textarea{
+	width: 100%;
+	padding: .7rem;
+	border: none;
+}
+
+.contactForm form button{
+	width: 100%;
+	padding: .7rem;
+	border: none;
+	background: rgb(244, 74, 17);
+	text-transform: uppercase;
+	padding: 1rem;
+
+}
+
+
+
+
+.contact-info{
+	background: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .formConsulta{
-	width: 60%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -489,8 +525,8 @@ footer{
 	font-weight: 500;
 }
 
-/* form de seccion contacto */
-
+form de seccion contacto */
+/*
 .formConsulta1{
 	width: 45%;
 	display: flex;
@@ -528,7 +564,7 @@ footer{
 	margin: 1.6rem 0;
 	font-size: 2.1rem;
 	font-weight: 500;
-}
+}*/
 
 /* prueba footer con flex box */
 
@@ -550,6 +586,10 @@ footer{
 
 /* prueba contacto con flex box*/
 
+/*
+.form{
+	display: block;
+}
 
 .formularioFlex{               
 	display: flex;
@@ -557,19 +597,19 @@ footer{
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	/*height: auto;*/
+	/*height: auto;
 }
 
 .h3Flex{                     
 	width: 25%;
-	/*height: ;*/
+	/*height: ;
 	
 }
 
 
 .formFlex{                        
 	/*width: 100%;
-	/*height: ;*/
+	/*height: ;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -601,7 +641,7 @@ footer{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
+}*/
 
 
 /* MEDIA QUERIES  */
@@ -642,6 +682,11 @@ footer{
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	.imgFlex{
+		flex-direction: row-reverse;
+	}
+
 }
 
 
@@ -728,6 +773,11 @@ footer{
 	}
 
 
+
+
+
+
+
 /*.sectionDesign{   
 	display: grid;  
 	grid-template-areas: 
@@ -755,8 +805,16 @@ footer{
 }	
 
 
+.bg-div{
+	background: rgba(186, 186, 186, .05);
+}
+
+.align{
+	text-align: center;
+}
+
 /* SECTION CONTACTO GRID */
-.contenedorGridc{
+/*.contenedorGridc{
 	width: 100vw;
 	height: 100vh;
 	display: grid;
@@ -804,7 +862,7 @@ footer{
 
 /*MEDIA QUERIES */
 
-@media (min-width: 768px){
+/*@media (min-width: 768px){
 	.contenedorGrid{
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
@@ -855,7 +913,7 @@ footer{
 }
 
 /* SECTION FAQ */
-.contenedorGridf{
+/*.contenedorGridf{
 	width: 100vw;
 	height: 100vh;
 	display: grid;
@@ -885,7 +943,7 @@ footer{
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 768px){
+/*@media (min-width: 768px){
 	.contenedorGridf{
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
@@ -926,7 +984,7 @@ footer{
 
 
 /* SECTION NOTICIAS */
-.contenegorGridn{
+/*.contenegorGridn{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(4, 1fr) ;
@@ -955,7 +1013,7 @@ footer{
 
 
 /* MEDIA QUERIES */
-@media (min-width: 768px){
+/*@media (min-width: 768px){
 	.contenegorGridn{
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto ;
@@ -999,16 +1057,16 @@ footer{
 
 /* ANIMACIONES */
 
-.linear-gradient{
+.bg-linear-gradient{
 	background: rgb(182,182,182);
 	background: linear-gradient(150deg, rgba(182,182,182,1) 0%, rgba(199,199,199,1) 64%, rgba(236,68,16,1) 100%);
 }
 
 
-.transition{
+/*.transition{
 	background-color: rgb(255, 74, 17);
 	border-radius: 3px;
-}
+}*/
 
 .transition:hover{
 	cursor: pointer;
@@ -1026,6 +1084,7 @@ footer{
 
 }*/
 
+
 .aquiBoton{
 	width: 100%;
 }
@@ -1038,3 +1097,26 @@ footer{
 .scaleFoot:hover{
 transform: scaleX(0.8);
 	}
+
+
+/* REVEER ANIMACIONES PARA DARLE EFECTO DE AGRANDAR */
+/*
+.btnColor:hover{
+	cursor: pointer;
+	border: black;
+	width: 10%;
+	transition: all 2s;
+}
+
+*/
+
+
+.imgFooter{
+	width: 40%;
+}
+
+.imgFooter:hover{
+	width: 49%;
+	cursor: pointer;
+}
+
